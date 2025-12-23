@@ -204,6 +204,19 @@ Headers:
 ```
 
 ---
+### 🐳 Docker Image
+A prebuilt Docker image is available on Docker Hub for quick evaluation and local testing:
+```
+docker pull ahsansiyal/reimbursement_api
+```
+Run with environment variables:
+```
+docker run -p 8000:8000 \
+  --env-file .env \
+  ahsansiyal/reimbursement_api
+```
+⚠️ Note
+This image is intended for development and evaluation purposes only.
 
 ## ERP Integration Pattern
 
