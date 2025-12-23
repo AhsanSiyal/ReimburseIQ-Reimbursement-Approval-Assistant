@@ -127,14 +127,37 @@ pip install -r requirements.txt
 
 ## Environment Variables
 
-Create `.env` from `.env.example`.
+Create `.env`
 
 Minimum required:
 
 ```ini
-OPENAI_API_KEY=sk-...
-JWT_SECRET=change_this_to_a_long_random_secret_32_chars_min
-VALID_API_KEYS=dev-key-1,streamlit-key-2025,prod-key-abc
+# OpenAI
+OPENAI_API_KEY=sk-
+
+# Models
+OPENAI_CHAT_MODEL=gpt-4.1-mini
+OPENAI_EMBED_MODEL=text-embedding-3-large
+
+# RAG index paths
+VECTOR_INDEX_PATH=data/index/faiss.index
+VECTOR_META_PATH=data/index/meta.json
+
+# RAG settings
+RAG_TOP_K=6
+MAX_POLICY_CHUNK_CHARS=2400
+
+# API key allow-list (comma-separated)
+VALID_API_KEYS=
+
+# JWT signing
+JWT_SECRET=
+JWT_ALGORITHM=
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+JWT_ISSUER=
+JWT_AUDIENCE=
+API_KEY_HEADER_NAME=
+
 ```
 
 ---
