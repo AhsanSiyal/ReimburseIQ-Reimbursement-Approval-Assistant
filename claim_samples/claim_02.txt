@@ -1,0 +1,26 @@
+{
+  "claim_id": "C-OFFICE-001",
+  "submission_date": "2026-01-10",
+  "currency": "EUR",
+  "employee": {
+    "employee_id": "E-110",
+    "name": "Julia Example",
+    "email": "julia@example.com",
+    "department": "Engineering",
+    "manager_id": "M-18",
+    "country": "AT"
+  },
+  "lines": [
+    {
+      "line_id": "L1",
+      "date": "2026-01-07",
+      "category": "OFFICE",
+      "amount": 180,
+      "currency": "EUR",
+      "vendor": "Tech Store",
+      "description": "External monitor for work",
+      "preapproval": { "provided": false },
+      "receipt": { "provided": true }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+    "decision": "APPROVE_RECOMMENDED",
+    "summary": "The claim lines for airfare and rail are compliant with policy requirements. Receipts are provided for both lines as required by R-DOC-001 and R-DOC-003. The claim was submitted within 30 days of the expense dates per R-GEN-002. The total amount is below thresholds requiring additional approvals beyond the direct manager per R-APP-001 and R-APP-002. No issues or missing information were identified.",
+    "approval_route": [
+        "MANAGER"
+    ],
+    "claim_total": 265.0,
+    "lines": [
+        {
+            "line_id": "L1",
+            "status": "COMPLIANT",
+            "issues": [],
+            "suggested_fix": null
+        },
+        {
+            "line_id": "L2",
+            "status": "COMPLIANT",
+            "issues": [],
+            "suggested_fix": null
+        }
+    ],
+    "missing_info": [],
+    "citations": [
+        {
+            "rule_id": "R-DOC-001",
+            "section_title": "2. Receipts & Documentation",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Receipt required for any single line >= 25 EUR (or local equivalent)."
+        },
+        {
+            "rule_id": "R-DOC-003",
+            "section_title": "2. Receipts & Documentation",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Airfare/rail requires proof of payment + itinerary."
+        },
+        {
+            "rule_id": "R-GEN-002",
+            "section_title": "1. General Eligibility",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Expenses must be submitted within 30 calendar days of the expense date."
+        },
+        {
+            "rule_id": "R-APP-001",
+            "section_title": "3. Approval Matrix",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Direct manager approval required for all reimbursements."
+        },
+        {
+            "rule_id": "R-APP-002",
+            "section_title": "3. Approval Matrix",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Any single line > 300 EUR requires Department Head approval."
+        }
+    ],
+    "debug": {
+        "deterministic": {
+            "decision": "APPROVE_RECOMMENDED",
+            "claim_total": 265.0,
+            "approval_route": [
+                "MANAGER"
+            ],
+            "line_results": [
+                {
+                    "line_id": "L1",
+                    "status": "COMPLIANT",
+                    "issues": []
+                },
+                {
+                    "line_id": "L2",
+                    "status": "COMPLIANT",
+                    "issues": []
+                }
+            ],
+            "missing_info": []
+        },
+        "rag_excerpts_used": 10
+    }
+}

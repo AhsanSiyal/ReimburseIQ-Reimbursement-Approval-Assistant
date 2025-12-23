@@ -1,0 +1,49 @@
+{
+  "claim_id": "C-10001",
+  "submission_date": "2026-01-10",
+  "currency": "EUR",
+  "employee": {
+    "employee_id": "E-7",
+    "name": "Ada Lovelace",
+    "email": "ada@company.com",
+    "department": "Engineering",
+    "manager_id": "M-2",
+    "country": "AT"
+  },
+  "trip": {
+    "trip_id": "T-123",
+    "business_purpose": "Client onsite workshop",
+    "start_date": "2025-12-01",
+    "end_date": "2025-12-03",
+    "destination_city": "Paris",
+    "destination_country": "FR"
+  },
+  "lines": [
+    {
+      "line_id": "L1",
+      "date": "2025-12-02",
+      "category": "MEALS",
+      "meal_type": "DINNER",
+      "amount": 55,
+      "currency": "EUR",
+      "vendor": "Bistro X",
+      "description": "Dinner during client travel",
+      "receipt": {
+        "provided": true,
+        "file_name": "receipt1.pdf"
+      }
+    },
+    {
+      "line_id": "L2",
+      "date": "2025-12-02",
+      "category": "TAXI",
+      "amount": 35,
+      "currency": "EUR",
+      "vendor": "City Taxi",
+      "description": "Airport taxi",
+      "receipt": {
+        "provided": false
+      }
+    }
+  ]
+}

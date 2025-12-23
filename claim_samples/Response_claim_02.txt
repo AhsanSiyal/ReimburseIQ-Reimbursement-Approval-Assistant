@@ -1,0 +1,61 @@
+{
+    "decision": "APPROVE_RECOMMENDED",
+    "summary": "The claim line for an external monitor costing 180 EUR is compliant with policy. A receipt is provided as required for expenses over 25 EUR (R-DOC-001). The expense is business-related and submitted within 30 days (R-GEN-001, R-GEN-002). Manager approval is required and included in the approval route (R-APP-001). No policy rules are violated.",
+    "approval_route": [
+        "MANAGER"
+    ],
+    "claim_total": 180.0,
+    "lines": [
+        {
+            "line_id": "L1",
+            "status": "COMPLIANT",
+            "issues": [],
+            "suggested_fix": null
+        }
+    ],
+    "missing_info": [],
+    "citations": [
+        {
+            "rule_id": "R-DOC-001",
+            "section_title": "2. Receipts & Documentation",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Receipt required for any single line >= 25 EUR (or local equivalent)."
+        },
+        {
+            "rule_id": "R-GEN-001",
+            "section_title": "1. General Eligibility",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Expenses must be business-related, reasonable, and necessary."
+        },
+        {
+            "rule_id": "R-GEN-002",
+            "section_title": "1. General Eligibility",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Expenses must be submitted within 30 calendar days of the expense date."
+        },
+        {
+            "rule_id": "R-APP-001",
+            "section_title": "3. Approval Matrix",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Direct manager approval required for all reimbursements."
+        }
+    ],
+    "debug": {
+        "deterministic": {
+            "decision": "APPROVE_RECOMMENDED",
+            "claim_total": 180.0,
+            "approval_route": [
+                "MANAGER"
+            ],
+            "line_results": [
+                {
+                    "line_id": "L1",
+                    "status": "COMPLIANT",
+                    "issues": []
+                }
+            ],
+            "missing_info": []
+        },
+        "rag_excerpts_used": 9
+    }
+}

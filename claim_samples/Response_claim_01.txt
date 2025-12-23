@@ -1,0 +1,116 @@
+{
+    "decision": "REJECT_RECOMMENDED",
+    "summary": "The claim lines are non-compliant due to late submission beyond the 30-day limit and missing required receipt for the taxi expense. Additionally, the dinner meal amount exceeds the allowed cap of 40 EUR. Missing receipt declaration for the taxi line is also required but not provided.",
+    "approval_route": [
+        "MANAGER"
+    ],
+    "claim_total": 90.0,
+    "lines": [
+        {
+            "line_id": "L1",
+            "status": "NON_COMPLIANT",
+            "issues": [
+                {
+                    "code": "SUBMISSION_LATE",
+                    "message": "Submitted 39 days after expense date (policy limit: 30 days).",
+                    "rule_ids": []
+                },
+                {
+                    "code": "MEAL_CAP_EXCEEDED",
+                    "message": "Meal amount 55.00 exceeds cap 40.00 for DINNER.",
+                    "rule_ids": []
+                }
+            ],
+            "suggested_fix": "Submit claim within 30 days of expense date and reduce meal amount to 40 EUR or less."
+        },
+        {
+            "line_id": "L2",
+            "status": "NON_COMPLIANT",
+            "issues": [
+                {
+                    "code": "SUBMISSION_LATE",
+                    "message": "Submitted 39 days after expense date (policy limit: 30 days).",
+                    "rule_ids": []
+                },
+                {
+                    "code": "MISSING_RECEIPT",
+                    "message": "Receipt required for single line >= 25 EUR.",
+                    "rule_ids": []
+                }
+            ],
+            "suggested_fix": "Submit claim within 30 days of expense date and provide receipt or Missing Receipt Declaration."
+        }
+    ],
+    "missing_info": [
+        "Receipt (or Missing Receipt Declaration) for line L2"
+    ],
+    "citations": [
+        {
+            "rule_id": "R-GEN-002",
+            "section_title": "1. General Eligibility",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Expenses must be submitted within 30 calendar days of the expense date."
+        },
+        {
+            "rule_id": "R-MEA-002",
+            "section_title": "4. Meals",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Caps per person: Breakfast 15 EUR, Lunch 25 EUR, Dinner 40 EUR."
+        },
+        {
+            "rule_id": "R-DOC-001",
+            "section_title": "2. Receipts & Documentation",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Receipt required for any single line >= 25 EUR (or local equivalent)."
+        },
+        {
+            "rule_id": "R-DOC-005",
+            "section_title": "2. Receipts & Documentation",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Missing receipt requires Missing Receipt Declaration."
+        }
+    ],
+    "debug": {
+        "deterministic": {
+            "decision": "NEEDS_MORE_INFO",
+            "claim_total": 90.0,
+            "approval_route": [
+                "MANAGER"
+            ],
+            "line_results": [
+                {
+                    "line_id": "L1",
+                    "status": "NON_COMPLIANT",
+                    "issues": [
+                        {
+                            "code": "SUBMISSION_LATE",
+                            "message": "Submitted 39 days after expense date (policy limit: 30 days)."
+                        },
+                        {
+                            "code": "MEAL_CAP_EXCEEDED",
+                            "message": "Meal amount 55.00 exceeds cap 40.00 for DINNER."
+                        }
+                    ]
+                },
+                {
+                    "line_id": "L2",
+                    "status": "NON_COMPLIANT",
+                    "issues": [
+                        {
+                            "code": "SUBMISSION_LATE",
+                            "message": "Submitted 39 days after expense date (policy limit: 30 days)."
+                        },
+                        {
+                            "code": "MISSING_RECEIPT",
+                            "message": "Receipt required for single line >= 25 EUR."
+                        }
+                    ]
+                }
+            ],
+            "missing_info": [
+                "Receipt (or Missing Receipt Declaration) for line L2"
+            ]
+        },
+        "rag_excerpts_used": 9
+    }
+}

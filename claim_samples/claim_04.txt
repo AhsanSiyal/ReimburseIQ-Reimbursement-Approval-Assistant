@@ -1,0 +1,26 @@
+Taxi (missing receipt above threshold)
+{
+  "claim_id": "C-TAXI-001",
+  "submission_date": "2026-01-10",
+  "currency": "EUR",
+  "employee": {
+    "employee_id": "E-104",
+    "name": "Dan Example",
+    "email": "dan@example.com",
+    "department": "Operations",
+    "manager_id": "M-13",
+    "country": "AT"
+  },
+  "lines": [
+    {
+      "line_id": "L1",
+      "date": "2026-01-09",
+      "category": "TAXI",
+      "amount": 35,
+      "currency": "EUR",
+      "vendor": "City Taxi",
+      "description": "Taxi to airport",
+      "receipt": { "provided": false }
+    }
+  ]
+}

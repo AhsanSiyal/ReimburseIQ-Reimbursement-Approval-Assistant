@@ -1,0 +1,70 @@
+{
+    "decision": "NEEDS_MORE_INFO",
+    "summary": "The taxi expense line is non-compliant due to missing receipt documentation required for single lines >= 25 EUR. The policy mandates a receipt or a Missing Receipt Declaration for such expenses. Additional information is needed to proceed with reimbursement.",
+    "approval_route": [
+        "MANAGER"
+    ],
+    "claim_total": 35.0,
+    "lines": [
+        {
+            "line_id": "L1",
+            "status": "NON_COMPLIANT",
+            "issues": [
+                {
+                    "code": "MISSING_RECEIPT",
+                    "message": "Receipt required for single line >= 25 EUR.",
+                    "rule_ids": []
+                }
+            ],
+            "suggested_fix": "Provide the receipt or a Missing Receipt Declaration for line L1."
+        }
+    ],
+    "missing_info": [
+        "Receipt (or Missing Receipt Declaration) for line L1"
+    ],
+    "citations": [
+        {
+            "rule_id": "R-DOC-001",
+            "section_title": "2. Receipts & Documentation",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Receipt required for any single line >= 25 EUR (or local equivalent)."
+        },
+        {
+            "rule_id": "R-DOC-005",
+            "section_title": "2. Receipts & Documentation",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Missing receipt requires Missing Receipt Declaration."
+        },
+        {
+            "rule_id": "R-TRN-003",
+            "section_title": "6. Transport",
+            "source_path": "data/policies\\rulebook.md",
+            "snippet": "Receipt required for taxi/ride-hailing >= 25 EUR."
+        }
+    ],
+    "debug": {
+        "deterministic": {
+            "decision": "NEEDS_MORE_INFO",
+            "claim_total": 35.0,
+            "approval_route": [
+                "MANAGER"
+            ],
+            "line_results": [
+                {
+                    "line_id": "L1",
+                    "status": "NON_COMPLIANT",
+                    "issues": [
+                        {
+                            "code": "MISSING_RECEIPT",
+                            "message": "Receipt required for single line >= 25 EUR."
+                        }
+                    ]
+                }
+            ],
+            "missing_info": [
+                "Receipt (or Missing Receipt Declaration) for line L1"
+            ]
+        },
+        "rag_excerpts_used": 9
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "claim_id": "C-TRAVEL-001",
+  "submission_date": "2026-01-10",
+  "currency": "EUR",
+  "employee": {
+    "employee_id": "E-111",
+    "name": "Khalid Example",
+    "email": "khalid@example.com",
+    "department": "Consulting",
+    "manager_id": "M-19",
+    "country": "AT"
+  },
+  "trip": {
+    "trip_id": "T-9003",
+    "business_purpose": "Client onsite delivery",
+    "start_date": "2026-01-02",
+    "end_date": "2026-01-06",
+    "destination_city": "Berlin",
+    "destination_country": "DE"
+  },
+  "lines": [
+    {
+      "line_id": "L1",
+      "date": "2026-01-02",
+      "category": "AIRFARE",
+      "amount": 220,
+      "currency": "EUR",
+      "vendor": "Airline A",
+      "description": "Economy flight to Berlin",
+      "receipt": { "provided": true, "file_name": "itinerary.pdf" }
+    },
+    {
+      "line_id": "L2",
+      "date": "2026-01-03",
+      "category": "RAIL",
+      "amount": 45,
+      "currency": "EUR",
+      "vendor": "DB Bahn",
+      "description": "Train ticket to client site",
+      "receipt": { "provided": true }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "Company Reimbursement Policy Rulebook (v1.0)",
+    "rule_ids": [],
+    "text": "# Company Reimbursement Policy Rulebook (v1.0)"
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "0. Metadata",
+    "rule_ids": [],
+    "text": "## 0. Metadata\n- Policy Owner: Finance\n- Effective Date: 2026-01-01\n- Applies To: All employees and contractors unless stated otherwise\n- Baseline Currency: EUR"
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "1. General Eligibility",
+    "rule_ids": [
+      "R-GEN-001",
+      "R-GEN-002",
+      "R-GEN-003",
+      "R-GEN-004"
+    ],
+    "text": "## 1. General Eligibility\nR-GEN-001: Expenses must be business-related, reasonable, and necessary.\nR-GEN-002: Expenses must be submitted within 30 calendar days of the expense date.\nR-GEN-003: Personal expenses are not reimbursable.\nR-GEN-004: Duplicate submissions are not reimbursable."
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "2. Receipts & Documentation",
+    "rule_ids": [
+      "R-DOC-001",
+      "R-DOC-002",
+      "R-DOC-003",
+      "R-DOC-004",
+      "R-DOC-005"
+    ],
+    "text": "## 2. Receipts & Documentation\nR-DOC-001: Receipt required for any single line >= 25 EUR (or local equivalent).\nR-DOC-002: Lodging requires itemized hotel invoice (room rate, taxes, dates).\nR-DOC-003: Airfare/rail requires proof of payment + itinerary.\nR-DOC-004: Client entertainment requires itemized receipt regardless of amount.\nR-DOC-005: Missing receipt requires Missing Receipt Declaration."
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "3. Approval Matrix",
+    "rule_ids": [
+      "R-APP-001",
+      "R-APP-002",
+      "R-APP-003",
+      "R-APP-004"
+    ],
+    "text": "## 3. Approval Matrix\nR-APP-001: Direct manager approval required for all reimbursements.\nR-APP-002: Any single line > 300 EUR requires Department Head approval.\nR-APP-003: Total claim > 1,000 EUR requires Finance approval.\nR-APP-004: Client entertainment requires Manager + Finance approval."
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "4. Meals",
+    "rule_ids": [
+      "R-MEA-001",
+      "R-MEA-002",
+      "R-MEA-003"
+    ],
+    "text": "## 4. Meals\nR-MEA-001: Reimbursable when traveling or working outside normal location for business.\nR-MEA-002: Caps per person: Breakfast 15 EUR, Lunch 25 EUR, Dinner 40 EUR.\nR-MEA-003: Alcohol not reimbursable unless client entertainment with approvals."
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "5. Lodging",
+    "rule_ids": [
+      "R-LOD-001",
+      "R-LOD-002",
+      "R-LOD-003"
+    ],
+    "text": "## 5. Lodging\nR-LOD-001: Nightly room rate cap (excl. taxes): 180 EUR (standard cities).\nR-LOD-002: High-cost cities may exceed cap only with manager pre-approval attached.\nR-LOD-003: Non-reimbursable: minibar, spa, movies."
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "6. Transport",
+    "rule_ids": [
+      "R-TRN-001",
+      "R-TRN-002",
+      "R-TRN-003"
+    ],
+    "text": "## 6. Transport\nR-TRN-001: Use public transport where feasible and safe.\nR-TRN-002: Taxi/ride-hailing reimbursable when time-critical or no safe public option.\nR-TRN-003: Receipt required for taxi/ride-hailing >= 25 EUR."
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "7. Mileage",
+    "rule_ids": [
+      "R-MIL-001",
+      "R-MIL-002",
+      "R-MIL-003"
+    ],
+    "text": "## 7. Mileage\nR-MIL-001: Reimbursed at 0.42 EUR per km.\nR-MIL-002: Must include start/end, distance, date, business purpose.\nR-MIL-003: Commuting to normal office is not reimbursable."
+  },
+  {
+    "source_path": "data/policies\\rulebook.md",
+    "section_title": "8. Training",
+    "rule_ids": [
+      "R-TRN-101",
+      "R-TRN-102"
+    ],
+    "text": "## 8. Training\nR-TRN-101: Training/conferences require pre-approval before purchase.\nR-TRN-102: Attach invoice and agenda where available."
+  }
+]
