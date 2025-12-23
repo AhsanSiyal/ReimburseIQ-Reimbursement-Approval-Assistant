@@ -1,4 +1,4 @@
-# Reimbursement Approval Assistant (FastAPI + RAG + OpenAI) — with API Key + JWT Security
+# ReimburseIQ: Reimbursement Approval Assistant (FastAPI + RAG + OpenAI)
 
 This project provides a **Reimbursement Approval Assistant** designed to be integrated with an ERP system.
 
